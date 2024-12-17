@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@300;600;700&display=swap');
+
+:root{
+  --Blue: hsl(223, 87%, 63%);
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.heading h1{
+    font-weight: 300;
+    padding: 50px 0 30px;
+    color: var(--Gray);
+}
+.heading h1 span{
+    font-weight: 700;
+    color: black;
+}
+.heading p{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.heading .form-control{
+    width: 300px;
+    margin: auto;
+}
+.heading .form-control input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--PaleBlue);
+    border: 1px solid var(--PaleBlue);
+    border-radius: 30px;
+    outline: none;
+}
+.heading .form-control input::placeholder{
+    color: var(--PaleBlue);
+}
+.heading .form-control button{
+    width: 100%;
+    background-color: var(--Blue);
+    color: white;
+    font-family: inherit;
+    padding: 8px;
+    border: 2px solid var(--Blue);
+    border-radius: 30px;
+    transition: background-color 0.5s;
+}
+.heading .form-control button:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--Blue);
+}
+.image{
+    padding: 50px 20px 70px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer ul li {
+    margin: 0 20px;
+}
+.footer ul li a {
+    color: var(--Blue);
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+}
+.footer ul li a:hover{
+    background-color: var(--Blue);
+    color: white;
+}
+.footer p{
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.error{
+    border: 2px solid var(--LightRed);
+}
+.error-text{
+    font-size: 12px;
+    font-style: italic;
+    color: var(--LightRed);
+    margin-right: auto;
+}
+
+@media (min-width: 700px){
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading .form-control{
+        width: auto;
+    }
+    .heading .form-control input,
+    .heading .form-control button{
+        width: auto;
+        padding: 12px 20px;
+    }
+    .heading .form-control button{
+        width: 150px;
+    }
+    .image img{
+        width: 600px;
+    }
+}
